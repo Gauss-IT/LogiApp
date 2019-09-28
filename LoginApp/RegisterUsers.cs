@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
 
 namespace LoginApp
 {
@@ -15,6 +16,11 @@ namespace LoginApp
         public RegisterUsers()
         {
             InitializeComponent();
+        }
+
+        private void BtnRegister_Click(object sender, EventArgs e)
+        {
+            var data = new Users();
         }
     }
 }

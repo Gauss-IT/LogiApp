@@ -12,7 +12,5 @@ namespace LoginApp
             var binding = new BindingSource { DataSource = dbContext.Useres.ToList() };
             dtgUsers.DataSource = binding;
         }
-
-
     }
 }

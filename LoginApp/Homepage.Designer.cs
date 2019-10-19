@@ -1,6 +1,6 @@
 ﻿namespace LoginApp
 {
-    partial class ShowData
+    partial class Homepage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgUsers = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).BeginInit();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // dtgUsers
+            // lblUsername
             // 
-            this.dtgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgUsers.Location = new System.Drawing.Point(62, 50);
-            this.dtgUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtgUsers.Name = "dtgUsers";
-            this.dtgUsers.RowHeadersWidth = 51;
-            this.dtgUsers.RowTemplate.Height = 24;
-            this.dtgUsers.Size = new System.Drawing.Size(455, 192);
-            this.dtgUsers.TabIndex = 0;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(74, 83);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(110, 13);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Welcome UsernameX";
             // 
-            // ShowData
+            // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.dtgUsers);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ShowData";
-            this.Text = "ShowData";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).EndInit();
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUsername);
+            this.Name = "Homepage";
+            this.Text = "Homepage";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgUsers;
+        private System.Windows.Forms.Label lblUsername;
     }
 }

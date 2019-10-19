@@ -20,7 +20,18 @@ namespace LoginApp
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            var data = new Users();
+            var dbContext = new Users();
+            var newUser = new User();
+            if (txtUsername.Text == "" || txtPassword.Text == "")
+                MessageBox.Show("Username field or password field are empty!");
+            else
+            {
+                newUser.UserName = txtUsername.Text;
+                newUser.Password = txtPassword.Text;
+                dbContext.Useres.Add(newUser);
+                dbContext.SaveChanges();
+                MessageBox.Show("Username added");
+            }
         }
     }
 }

@@ -65,14 +65,14 @@
             this.txtPassword.Location = new System.Drawing.Point(173, 120);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 22);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 2;
             // 
             // btnRegister
             // 
             this.btnRegister.Location = new System.Drawing.Point(173, 176);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 2;
+            this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
